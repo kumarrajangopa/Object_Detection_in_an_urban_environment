@@ -9,7 +9,7 @@ For this project, we will be using data from the [Waymo Open dataset](https://wa
 ## Structure
 The structure of the repository is as follows:
 ```
-	- Images - this folder consists of images from EDA, histograms, augmented images and the tensorboard images
+    - Images - this folder consists of images from EDA, histograms, augmented images and the tensorboard images
     - experiments - this folder contains the initial and final models as two experiments. A reference folder with the pretrained model(checkpoint), the changed pipeline file, the model file, the labels file and the exported model
     - edit_config.py
     - Exploratory Data Analysis Notebook.ipynb
@@ -26,7 +26,7 @@ The structure of the repository is as follows:
 The data in the workspace that will be used for training, validation and testing is organized as follow:
 ```
 /home/workspace/data/waymo
-	- training_and_validation - contains 97 files to train and validate your models
+    - training_and_validation - contains 97 files to train and validate your models
     - train: contain the train data (empty to start)
     - val: contain the val data (empty to start)
     - test - contains 3 files to test your model and create inference videos
