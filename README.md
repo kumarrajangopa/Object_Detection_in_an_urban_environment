@@ -165,15 +165,15 @@ Also there are only few images of cyclists indicating a skewed dataset and since
 Following the instructions first an initial reference model is downloaded and a Resnet model is applied. The pipeline configuration corresponding to this model is provided in the *experiments/experiment0* folder. 
 The metrics used include, Precision and Recall. The results of the initial model are presented below.
 
-<img src="Images/Tensorboard_images/Initial_model/train_loss_reference.PNG" width=600% height=100%>
+<img src="Images/Tensorboard_images/Initial_model/train_loss_reference.PNG" width=100% height=100%>
 
-<img src="Images/Tensorboard_images/Initial_model/eval_precision_reference.png" width=60% height=100%>
+<img src="Images/Tensorboard_images/Initial_model/eval_precision_reference.PNG" width=100% height=100%>
 
-<img src="Images/Tensorboard_images/Initial_model/eval_recall_reference.png" width=60% height=100%>
+<img src="Images/Tensorboard_images/Initial_model/eval_recall_reference.PNG" width=100% height=100%>
 
-<img src="Images/Tensorboard_images/Initial_model/eval_loss_reference.png" width=60% height=100%>
+<img src="Images/Tensorboard_images/Initial_model/eval_loss_reference.PNG" width=100% height=100%>
 
-<img src="Images/Tensorboard_images/Initial_model/learning_rate_reference.png" width=50% height=50%>
+<img src="Images/Tensorboard_images/Initial_model/learning_rate_reference.PNG" width=50% height=50%>
 
 
 After around 2500 steps the loss remained around 2.8 with very low precision and recall values. The loss curve is also indicative of a higher learning rate which explains the higher loss. Due to this the bounding boxes were not detected.
@@ -191,13 +191,13 @@ After this and based on the EDA the following data augmentations were applied:
 Since the learning rate was found to be high, this has been lowered to 0.001 from 0.004 and the warmup learning rate is also decreased to 1e-4. Also the number of steps has been increased from the default 2500 to 5000. Since this might be a higher number of steps that actually required, the training would truncate at 4000 steps. The results of the new experiment are as follows:
 
 
-<img src="Images/Tensorboard_images/Final_model/train_loss_expt2.png" width=100% height=100%>
+<img src="Images/Tensorboard_images/Final_model/train_loss_expt2.PNG" width=100% height=100%>
 
-<img src="Images/Tensorboard_images/Final_model/eval_precision_expt2.png" width=100% height=100%>
+<img src="Images/Tensorboard_images/Final_model/eval_precision_expt2.PNG" width=100% height=100%>
 
-<img src="Images/Tensorboard_images/Final_model/eval_recall_expt2.png" width=100% height=100%>
+<img src="Images/Tensorboard_images/Final_model/eval_recall_expt2.PNG" width=100% height=100%>
 
-<img src="Images/Tensorboard_images/Final_model/learning_rate_expt2.png" width=50% height=50%>
+<img src="Images/Tensorboard_images/Final_model/learning_rate_expt2.PNG" width=50% height=50%>
 
 
 Due to the lower learning rate the loss has been able to be decreased to around 1 and this has impacted the precision as well as recall values. The learning rate also follows the expected cosine curve. This resulted in an improved model with the bounding boxes able to detect correctly as showning the below .gif.(The file is compressed to reduce size and this has decreased the quality of the animation)
