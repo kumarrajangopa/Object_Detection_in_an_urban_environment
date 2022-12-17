@@ -188,6 +188,12 @@ After this and based on the EDA the following data augmentations were applied:
 5. Random adjust saturation
 6. Random rgb to grey
 
+These augmentations are visualized and some of these images are:
+
+![](Images/Images_augmentation/augmented2.png)  |  ![](Images/Images_augmentation/augmented5.png)
+![](Images/Images_augmentation/augmented10.png)  |  ![](Images/Images_augmentation/augmented12.png)
+![](Images/Images_augmentation/augmented14.png)  |  ![](Images/Images_augmentation/augmented16.png)
+
 Since the learning rate was found to be high, this has been lowered to 0.001 from 0.004 and the warmup learning rate is also decreased to 1e-4. Also the number of steps has been increased from the default 2500 to 5000. Since this might be a higher number of steps that actually required, the training would truncate at 4000 steps. The results of the new experiment are as follows:
 
 
