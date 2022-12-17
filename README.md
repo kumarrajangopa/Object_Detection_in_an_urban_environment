@@ -165,13 +165,13 @@ Also there are only few images of cyclists indicating a skewed dataset and since
 Following the instructions first an initial reference model is downloaded and a Resnet model is applied. The pipeline configuration corresponding to this model is provided in the *experiments/experiment0* folder. 
 The metrics used include, Precision and Recall. The results of the initial model are presented below.
 
-<img src="Images/Tensorboard_images/Initial_model/train_loss_reference.png" width=100% height=100%>
+<img src="Images/Tensorboard_images/Initial_model/train_loss_reference.PNG" width=600% height=100%>
 
-<img src="Images/Tensorboard_images/Initial_model/eval_precision_reference.png" width=100% height=100%>
+<img src="Images/Tensorboard_images/Initial_model/eval_precision_reference.png" width=60% height=100%>
 
-<img src="Images/Tensorboard_images/Initial_model/eval_recall_reference.png" width=100% height=100%>
+<img src="Images/Tensorboard_images/Initial_model/eval_recall_reference.png" width=60% height=100%>
 
-<img src="Images/Tensorboard_images/Initial_model/eval_loss_reference.png" width=100% height=100%>
+<img src="Images/Tensorboard_images/Initial_model/eval_loss_reference.png" width=60% height=100%>
 
 <img src="Images/Tensorboard_images/Initial_model/learning_rate_reference.png" width=50% height=50%>
 
